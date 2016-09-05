@@ -21,6 +21,7 @@ var _hmt = _hmt || [];
 
 <script language="javascript">
 	window.setInterval('showTime()',1000);
+	setTimeout("self.location.reload();",1000);
 	function showTime()
 	{
 		var now = new Date();
@@ -38,13 +39,13 @@ var _hmt = _hmt || [];
 		alldays += 34;
 		var allthetime = "From 2015.8.2 To Now : " + alldays + " days " + allhours + " hour(s) " +
 		allminutes + " minute(s) " + allseconds + " second(s)";
-		document.getElementById("time").innerHTML = althetime;
+		document.write(allthetime);
 	}
 </script>
 
 
 </head>
-<body onload="showTime()">
+<body>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-4 col-md-4">
@@ -106,7 +107,7 @@ var _hmt = _hmt || [];
 		</address>
 	</footer>
 
-	<div id="time"></div>
+	<div onload="showTime()" id="time"></div>
 
 	<EMBED src="The whistler and his dog.mp3" autostart="true" loop="5" width="0" height="0"></embed>
 	
