@@ -20,7 +20,6 @@ var _hmt = _hmt || [];
 </script>
 
 <script language="javascript">
-	setTimeout("self.location.reload();",1000);
 	window.setInterval('showTime()',1000);
 	function showTime()
 	{
@@ -37,7 +36,8 @@ var _hmt = _hmt || [];
 		var allminutes = Math.floor((alltime - alldays*1000*60*60*24 - allhours*1000*60*60)/(1000*60));
 		var allseconds = Math.floor((alltime - alldays*1000*60*60*24 - allhours*1000*60*60 - allminutes*1000*60)/1000);
 		alldays += 34;
-		var allthetime = alldays + " days " + allhours + " hour(s) " + allminutes + " minute(s) " + allseconds + " second(s)";
+		var allthetime = "From 2015.8.2 To Now : " + alldays + " days " + allhours + " hour(s) " +
+		allminutes + " minute(s) " + allseconds + " second(s)";
 		document.getElementById("time").innerHTML = althetime;
 	}
 </script>
