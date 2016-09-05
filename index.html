@@ -20,8 +20,6 @@ var _hmt = _hmt || [];
 </script>
 
 <script language="javascript">
-	window.setInterval('showTime()',1000);
-	setTimeout("self.location.reload();",1000);
 	function showTime()
 	{
 		var now = new Date();
@@ -107,7 +105,11 @@ var _hmt = _hmt || [];
 		</address>
 	</footer>
 
-	<div onload="showTime()" id="time"></div>
+	<div id="time" style="text-align:center;">
+		<script language="javascript">
+			window.setInterval("showTime()",1000);
+		</script>
+	</div>
 
 	<EMBED src="The whistler and his dog.mp3" autostart="true" loop="5" width="0" height="0"></embed>
 	
