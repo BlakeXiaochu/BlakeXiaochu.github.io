@@ -19,29 +19,6 @@ var _hmt = _hmt || [];
 })();
 </script>
 
-<script language="JavaScript">
-	function Gettime()
-	{
-		var now = new Date();
-		var together = new Date();
-		together.setFullYear(2015, 8, 2);
-		together.setHours(20);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		var alltime = now.getTime() - together.getTime();
-		var alldays = Math.floor(alltime / (1000 * 60 * 60 * 24));
-		var allhours = Math.floor((alltime - alldays*1000*60*60*24)/(1000*60*60));
-		var allminutes = Math.floor((alltime - alldays*1000*60*60*24 - allhours*1000*60*60)/(1000*60));
-		var allseconds = Math.floor((alltime - alldays*1000*60*60*24 - allhours*1000*60*60 - allminutes*1000*60)/1000);
-		alldays += 34;
-		var all = "From 2015.8.2 To Now : " + alldays + " days " + allhours + " hour(s) " + allminutes + " minute(s) " + allseconds + " second(s) ";	
-		document.getElementById("time").innerHTML = all;
-	}	
-	setInterval("Gettime()",1000); 
-</script>
-
-
 </head>
 <body>
 	<div class="container">
@@ -69,7 +46,7 @@ var _hmt = _hmt || [];
 				</a>
 			</div>
 			<div class="col-xs-4 col-md-4">
-				<a href="The Matrix.html" class="thumbnail">
+				<a href="html/timecapsule.html" class="thumbnail">
 					<img src="img/5.jpg" alt="...">
 				</a>
 			</div>
@@ -98,10 +75,7 @@ var _hmt = _hmt || [];
 		</div>
 	</div><br/>
 	
-	<div id="time" style="text-align:center; font-family: Georgia, Verdana; font-weight: bold;">
-	</div> 
-	
-	<pre><br/><br/><br/><br/><br/></pre>
+	<pre><br/><br/><br/></pre>
 	<footer> 
 		<address style="text-align:center;" position=""> Made with 
 		<img src="heart.jpg" alt="..." height="25" width="32"> in Bejing <br/>
