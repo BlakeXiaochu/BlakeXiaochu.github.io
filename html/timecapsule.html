@@ -20,11 +20,8 @@
 		var allminutes = Math.floor((alltime - alldays*1000*60*60*24 - allhours*1000*60*60)/(1000*60));
 		var allseconds = Math.floor((alltime - alldays*1000*60*60*24 - allhours*1000*60*60 - allminutes*1000*60)/1000);
 		alldays += 34;
-		var all1 = "From 2015.8.2 To Now : ";
-		var all2 =  alldays + " days " + allhours + " hour(s) " + allminutes + " minute(s) " + allseconds + " second(s) ";
-		document.getElementById("time").innerHTML = all1;
-		<br/>
-		document.getElementById("time").innerHTML = all2;
+		var all1 = "From 2015.8.2 To Now : " +  alldays + " days " + allhours + " hour(s) " + allminutes + " minute(s) " + allseconds + " second(s) ";
+		document.getElementById("time").innerHTML = all;
 	}	
 	setInterval("Gettime()",1000); 
 </script>
