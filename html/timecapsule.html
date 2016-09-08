@@ -43,14 +43,35 @@
 		background-repeat:repeat-x;
 	}
 	
-	img.clock
+	#clock
 	{
 		position: absolute;
 		top: 30px;
 		width: 75px;
 		height: 75px;
-		border-radius:50%;
+		border-radius:37.5px;
 		overflow:hidden;
+	}
+	
+	#Constellation
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 70px;
+		height: 35px;
+	}
+	
+	#libra
+	{
+		width: 35px;
+		height: 35px;
+		margin-left: 0px;
+	}
+	#pisces
+	{
+		width: 35px;
+		height: 35px;
+		margin-right: 0px;
 	}
 </style>
 
@@ -59,7 +80,11 @@
 <body>
 
 	<div id = "time"></div>
-	<img id = "clock" src = "clock.gif" alt = "clock..."></img>
+	<img id = "clock" src = "clock.gif" alt = "clock...">
+	<div id = "Constellation" >
+		<img id = "libra" src = "libra.png" alt = "libra...">
+		<img id = "pisces" src = "pisces.png" alt = "pisces"> 
+	</div>
 	
 </body>
 </html>
