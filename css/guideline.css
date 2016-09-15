@@ -149,7 +149,7 @@
 	.content a:nth-child(1)
 	{
 		background-color: #D3A4FF;
-		border-color: #D3A4FF;
+		color: #D3A4FF;
 		-webkit-transition-delay: 300ms;
         	-moz-transition-delay: 300ms;
         	-ms-transition-delay: 300ms;
