@@ -30,7 +30,21 @@ var _hmt = _hmt || [];
 	{
 		position: fixed;
 		top: 100px;
-    		display: inline-block;	
+    		display: inline-block;
+    		animation: pulse 5s infinite alternate;
+		-moz-animation: pulse 5s infinite alternate;	
+		-webkit-animation: pulse 5s infinite alternate;	
+		-o-animation: pulse 5s infinite alternate;	
+	}
+	
+	@keyframes pulse 
+	{
+		0% {
+			top: 95px;
+		}
+		100% {
+			top: 100px; 
+		} 
 	}
 	
 	.button
@@ -82,6 +96,14 @@ var _hmt = _hmt || [];
             	-ms-transition: opacity .4s, -ms-transform .5s;
             	-o-transition: opacity .4s, -o-transform .5s;
             	transition: opacity .4s, transform .5s;
+	}
+	
+	.guideline:hover
+	{
+		animation: none;
+		-moz-animation: none;	
+		-webkit-animation: none;	
+		-o-animation: none;
 	}
 	
 	.guideline:hover button 
