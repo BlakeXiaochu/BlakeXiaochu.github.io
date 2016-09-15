@@ -78,14 +78,7 @@
         	transition: opacity .4s, transform .5s;
 	}
 	
-	.guideline:hover
-	{
-		-moz-animation: none;	
-		-webkit-animation: none;	
-		-o-animation: none;
-		-ms-transition: none;
-		animation: none;
-	}
+
 	
 	.guideline:hover button 
 	{
