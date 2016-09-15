@@ -60,6 +60,7 @@
 	{
 		height: 70px;
 		padding: 20% 10px;
+		border: 3px 0px solid;
 		text-decoration: none;
 		display: block;
 		font-family:"微软雅黑";
@@ -148,6 +149,7 @@
 	{
 		color: #930093;
 		background-color: #D3A4FF;
+		border-color: #D3A4FF;
 		-webkit-transition-delay: 300ms;
         	-moz-transition-delay: 300ms;
         	-ms-transition-delay: 300ms;
