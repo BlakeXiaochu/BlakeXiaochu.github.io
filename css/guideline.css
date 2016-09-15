@@ -60,7 +60,7 @@
 	{
 		height: 70px;
 		padding: 20% 10px;
-		border-width: 3px 0px;
+		border-width: 2px 0px;
 		border-style: solid;
 		text-decoration: none;
 		display: block;
@@ -149,7 +149,7 @@
 	.content a:nth-child(1)
 	{
 		background-color: #D3A4FF;
-		color: #D3A4FF;
+		color: #AE00AE;
 		-webkit-transition-delay: 300ms;
         	-moz-transition-delay: 300ms;
         	-ms-transition-delay: 300ms;
