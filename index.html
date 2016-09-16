@@ -20,7 +20,7 @@
 	
 	#word
 	{
-		position: relative;
+		position: absolute;
 		left: 4%;
 		font-family: '微软雅黑', '宋体';
 		font-size: 58px;
@@ -73,14 +73,14 @@
 	var myFunction;
 	txt = document.getElementById("word").innerHTML;
 	txtlength = txt.length;
-    document.getElementById("word").innerHTML = " ";
+    	document.getElementById("word").innerHTML = " ";
 	function start()
 	{
 		var times = 2;
 		var go;
 		go = setInterval(function(){if(times <= 0) clearTimeout(go);
 		document.getElementById("word").innerHTML = "|"; 		
-		setTimeout(function(){document.getElementById("word").innerHTML = ""; times--;}, 2*speed);}, speed*4);
+		setTimeout(function(){document.getElementById("word").innerHTML = " "; times--;}, 2*speed);}, speed*4);
 		setTimeout(function(){myFunction = setInterval(print, speed);}, 16*speed);	
 	}
 	function print()
@@ -88,7 +88,7 @@
 		if(pos >= txtlength - 1) {clearTimeout(myFunction);}
 		document.getElementById("word").innerHTML += txt.substr(pos,1);
 		document.getElementById("word").innerHTML += "|";
-		setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", "")}, speed);
+		setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", " ")}, speed);
 		if(pos >= txtlength - 1)
 		{
 			var times = 2;
