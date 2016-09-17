@@ -15,15 +15,15 @@
 	#container
 	{
 		position: relative;
-		top: 15%;
+		top: 25%;
 	}
 	
 	#word
 	{
-		position: absolute;
-		left: 23%;
+		height: 200px;
 		font-family: '微软雅黑', '宋体';
 		font-size: 58px;
+		text-align: center;
 		z-index: 10;
 	}
 	
@@ -45,6 +45,7 @@
 		width: 220px;
 		height: auto;
 		left: 5%;
+		top: 15%;
 		-webkit-animation:  float_ballon 2s infinite alternat;
 		animation: float_ballon 2s infinite alternate;
 		z-index: 1;
@@ -56,8 +57,8 @@
 <body onLoad="start()">
 
 	<div id="container">
-    	<p id="word" >阿喵，19岁生日快乐~~</p>
-        <p><a href="main.html">进入主页</a></p>
+    	<p id="word" >阿喵，19岁生日快乐~</p>
+        <p><a id="main" href="main.html">进入主页</a></p>
     </div>
     
     
@@ -68,7 +69,7 @@
 	<script>
 	
 	var pos = 0;
-	var speed = 181;
+	var speed = 180;
 	var txt, txtlength, live_txt;
 	var myFunction;
 	txt = document.getElementById("word").innerHTML;
@@ -88,14 +89,15 @@
 		if(pos >= txtlength - 1) {clearTimeout(myFunction);}
 		document.getElementById("word").innerHTML += txt.substr(pos,1);
 		document.getElementById("word").innerHTML += "|";
-		setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", " ")}, speed);
+		setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", "")}, speed);
 		if(pos >= txtlength - 1)
 		{
 			var times = 2;
 			var go;
+			document.getElementById("word").innerHTML += "&nbsp;"; 
 			go = setInterval(function(){if(times <= 0) clearTimeout(go);
-			document.getElementById("word").innerHTML += "|"; 		
-			setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", ""); times--;}, speed*2);}, speed*4);
+			document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("&nbsp;", "|"); 		
+			setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", "&nbsp;"); times--;}, speed*2);}, speed*4);
 		}
 		pos++;	
 	}
