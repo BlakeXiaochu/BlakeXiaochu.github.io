@@ -116,12 +116,11 @@
 		if(pos >= txtlength - 1) {clearTimeout(myFunction);}
 		document.getElementById("word").innerHTML += txt.substr(pos,1);
 		document.getElementById("word").innerHTML += "|";
-		setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", "")}, speed);
+		setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", "&nbsp;")}, speed);
 		if(pos >= txtlength - 1)
 		{
 			var times = 2;
 			var go;
-			document.getElementById("word").innerHTML += "&nbsp;"; 
 			go = setInterval(function(){if(times <= 0) clearTimeout(go);
 			document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("&nbsp;", "|"); 		
 			setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", "&nbsp;"); times--;}, speed*2.2);}, speed*4);
