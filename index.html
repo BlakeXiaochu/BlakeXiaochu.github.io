@@ -93,10 +93,10 @@
     	<img id="ballon2" src="picture/ballon.png" alt="..."/>
     </div>
     
-	<script>
+<script>
 	
 	var pos = 0;
-	var speed = 250;
+	var speed = 180;
 	var txt, txtlength, live_txt;
 	var myFunction;
 	txt = document.getElementById("word").innerHTML;
@@ -114,6 +114,7 @@
 	function print()
 	{
 		if(pos >= txtlength - 1) {clearTimeout(myFunction);}
+		document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("&nbsp;", "");
 		document.getElementById("word").innerHTML += txt.substr(pos,1);
 		document.getElementById("word").innerHTML += "|";
 		setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", "&nbsp;")}, speed);
