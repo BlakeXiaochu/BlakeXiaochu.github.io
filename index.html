@@ -33,10 +33,16 @@
 		text-decoration: none;
 	}
 	
-	@keyframes float_ballon
+	@keyframes float_ballon1
 	{
-		0% {top: 18%}
+		0% {top: 15%}
 		100% {top: 25%}	
+	}
+	
+	@keyframes float_ballon2
+	{
+		0% {bottom: 15%}
+		100% {bottom: 25%}	
 	}
 	
 	#ballon1
@@ -46,8 +52,8 @@
 		height: auto;
 		left: 5%;
 		top: 15%;
-		-webkit-animation:  float_ballon 2s infinite alternat;
-		animation: float_ballon 2s infinite alternate;
+		-webkit-animation:  float_ballon1 2s infinite alternat;
+		animation: float_ballon1 2s infinite alternate;
 		z-index: 1;
 	}
 	
@@ -57,9 +63,9 @@
 		width: 220px;
 		height: auto;
 		right: 5%;
-		bottom: 20%;
-		-webkit-animation:  float_ballon 2s infinite alternat;
-		animation: float_ballon 2s infinite alternate;
+		bottom: 15%;
+		-webkit-animation:  float_ballon2 2s infinite alternat;
+		animation: float_ballon2 2s infinite alternate;
 		z-index: 1;
 	}
 	
