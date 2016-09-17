@@ -109,7 +109,7 @@
 		go = setInterval(function(){if(times <= 0) clearTimeout(go);
 		document.getElementById("word").innerHTML = "|"; 		
 		setTimeout(function(){document.getElementById("word").innerHTML = " "; times--;}, 2*speed);}, speed*4);
-		setTimeout(function(){myFunction = setInterval(print, speed);}, 16*speed);	
+		setTimeout(function(){myFunction = setInterval(print, speed*2);}, 17*speed);	
 	}
 	function print()
 	{
@@ -124,7 +124,7 @@
 			document.getElementById("word").innerHTML += "&nbsp;"; 
 			go = setInterval(function(){if(times <= 0) clearTimeout(go);
 			document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("&nbsp;", "|"); 		
-			setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", "&nbsp;"); times--;}, speed*2);}, speed*4);
+			setTimeout(function(){document.getElementById("word").innerHTML = document.getElementById("word").innerHTML.replace("|", "&nbsp;"); times--;}, speed*2.2);}, speed*4);
 		}
 		pos++;	
 	}
