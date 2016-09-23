@@ -126,14 +126,19 @@
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 			if(times > 0) {explode();}
-            content = "阿喵~";
-			setTimeout(function() {createText(content.toUpperCase());}, 810);
-			setTimeout(function(){
-				explode();
-				content = "生日快乐";
-				setTimeout(function() {createText(content.toUpperCase());}, 810);
-			}, 4000);
 			times++;
+            content = "阿喵~";
+			setTimeout(function() {createText(content.toUpperCase());}, 1000);
+			setTimeout(explode, 3000);
+			setTimeout(function() {
+				content = "19岁";
+				createText(content.toUpperCase());
+			}, 4000);
+			setTimeout(explode, 6000);
+			setTimeout(function(){
+				content = "生日快乐";
+				createText(content.toUpperCase());	
+			}, 7000);
         });
     }
 
