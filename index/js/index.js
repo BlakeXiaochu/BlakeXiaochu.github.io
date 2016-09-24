@@ -125,7 +125,6 @@
     function addListeners() {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            		document.getElementById("main").style.display = "block";
 			if(times > 0) {explode();}
 			times++;
             		content = "阿喵~";
@@ -140,6 +139,7 @@
 				content = "生日快乐";
 				createText(content.toUpperCase());	
 			}, 7000);
+			document.getElementById("main").style.display = "block";
         });
     }
 
