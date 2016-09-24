@@ -125,9 +125,10 @@
     function addListeners() {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
+            		document.getElementById('submit').style.display = "block";
 			if(times > 0) {explode();}
 			times++;
-            content = "阿喵~";
+            		content = "阿喵~";
 			setTimeout(function() {createText(content.toUpperCase());}, 1000);
 			setTimeout(explode, 3000);
 			setTimeout(function() {
