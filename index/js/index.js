@@ -137,9 +137,9 @@
 			setTimeout(explode, 6000);
 			setTimeout(function(){
 				content = "生日快乐";
-				createText(content.toUpperCase());	
+				createText(content.toUpperCase());
+				document.getElementById("main").style.display = "block";
 			}, 7000);
-			document.getElementById("main").style.display = "block";
         });
     }
 
