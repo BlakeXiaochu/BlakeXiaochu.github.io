@@ -36,7 +36,7 @@ input[type="submit"] {
   -webkit-transition:width 0.5s ease 0;
 }
 
-#submit : hover
+input:hover 
 {
 	 -moz-transform: rotate(20deg);
 	 -ms-transform: rotate(20deg); 
