@@ -67,8 +67,8 @@ input[type="submit"] {
 
 input:hover
 {
-	-webkit-animation: shake 0.2s infinite alternate;
-	animation: shake 0.2s infinite alternate;
+	-webkit-animation: none;
+	animation: none;
 }
 
 form {
