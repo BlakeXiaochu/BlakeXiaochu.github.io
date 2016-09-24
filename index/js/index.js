@@ -125,7 +125,7 @@
     function addListeners() {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            		document.getElementById("submit").style.display = "block";
+            		document.getElementById("main").style.display = "block";
 			if(times > 0) {explode();}
 			times++;
             		content = "阿喵~";
