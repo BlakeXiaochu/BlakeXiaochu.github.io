@@ -65,8 +65,8 @@ input[type="submit"] {
 
 #submit : hover
 {
-	animation: shake 0.5s infinite alternate;
 	-webkit-animation: shake 0.5s infinite alternate;
+	animation: shake 0.5s infinite alternate;
 }
 
 form {
