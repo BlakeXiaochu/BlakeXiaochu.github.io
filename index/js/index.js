@@ -140,6 +140,18 @@
 				createText(content.toUpperCase());
 				document.getElementById("main").style.display = "block";
 			}, 7000);
+			setTimeout(explode, 9000);
+			setTimeout(function(){
+				content = "我在北京";
+				createText(content.toUpperCase());
+				document.getElementById("main").style.display = "block";
+			}, 10000);
+			setTimeout(explode, 12000);
+			setTimeout(function(){
+				content = "有点想你了";
+				createText(content.toUpperCase());
+				document.getElementById("main").style.display = "block";
+			}, 10000);
         });
     }
 
