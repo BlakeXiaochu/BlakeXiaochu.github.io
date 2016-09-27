@@ -154,7 +154,7 @@
 				content = "想你诶";
 				createText(content.toUpperCase());
 				document.getElementById("main").style.display = "block";
-			}, 12000);
+			}, 14000);
         });
     }
 
