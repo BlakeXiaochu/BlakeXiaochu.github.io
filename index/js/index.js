@@ -141,7 +141,7 @@
 			}, 7000);
 			setTimeout(explode, 9000);
 			setTimeout(function(){
-				content = "啦啦啦";
+				content = "哈哈哈";
 				createText(content.toUpperCase());
 			}, 10000);
 			setTimeout(explode, 11000);
