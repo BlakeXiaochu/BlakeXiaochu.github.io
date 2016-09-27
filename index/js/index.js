@@ -144,12 +144,17 @@
 				content = "我在北京";
 				createText(content.toUpperCase());
 			}, 10000);
-			setTimeout(explode, 12000);
+			setTimeout(explode, 11000);
 			setTimeout(function(){
-				content = "有点想你了";
+				content = "有点...";
+				createText(content.toUpperCase());
+			}, 12000);
+			setTimeout(explode, 13000);
+			setTimeout(function(){
+				content = "想你诶";
 				createText(content.toUpperCase());
 				document.getElementById("main").style.display = "block";
-			}, 13000);
+			}, 12000);
         });
     }
 
