@@ -141,17 +141,17 @@
 			}, 7000);
 			setTimeout(explode, 9000);
 			setTimeout(function(){
-				content = "我在北京";
+				content = "啦啦啦";
 				createText(content.toUpperCase());
 			}, 10000);
 			setTimeout(explode, 11000);
 			setTimeout(function(){
-				content = "有点...";
+				content = "啦啦啦";
 				createText(content.toUpperCase());
 			}, 12000);
 			setTimeout(explode, 13000);
 			setTimeout(function(){
-				content = "想你诶";
+				content = "生日快乐";
 				createText(content.toUpperCase());
 				document.getElementById("main").style.display = "block";
 			}, 14000);
