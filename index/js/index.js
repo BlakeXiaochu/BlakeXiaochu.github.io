@@ -128,33 +128,18 @@
 			if(times > 0) {explode();}
 			times++;
             		content = "阿喵~";
-			setTimeout(function() {createText(content.toUpperCase());}, 1000);
-			setTimeout(explode, 3000);
+			setTimeout(function() {createText(content.toUpperCase());}, 2000);
+			setTimeout(explode, 4000);
 			setTimeout(function() {
-				content = "19岁";
+				content = "你好啊";
 				createText(content.toUpperCase());
-			}, 4000);
-			setTimeout(explode, 6000);
+			}, 6000);
+			setTimeout(explode, 8000);
 			setTimeout(function(){
-				content = "生日快乐";
-				createText(content.toUpperCase());
-			}, 7000);
-			setTimeout(explode, 9000);
-			setTimeout(function(){
-				content = "哈哈哈";
-				createText(content.toUpperCase());
-			}, 10000);
-			setTimeout(explode, 11000);
-			setTimeout(function(){
-				content = "啦啦啦";
-				createText(content.toUpperCase());
-			}, 12000);
-			setTimeout(explode, 13000);
-			setTimeout(function(){
-				content = "生日快乐";
+				content = "欢迎回来";
 				createText(content.toUpperCase());
 				document.getElementById("main").style.display = "block";
-			}, 14000);
+			}, 10000);
         });
     }
 
