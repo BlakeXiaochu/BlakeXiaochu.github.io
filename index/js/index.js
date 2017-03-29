@@ -136,6 +136,7 @@
 			}, 4000);
 			setTimeout(explode, 5500);
 			setTimeout(function(){
+				document.getElementById("main").style.display = "block";
 				content = "欢迎回来";
 				createText(content.toUpperCase());
 				document.getElementById("main").style.display = "block";
